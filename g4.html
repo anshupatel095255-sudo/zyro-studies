@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyro Studies | Class 9 Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #10b981; --bg: #080808; }
+        body { background-color: var(--bg); color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        .cyber-font { font-family: 'Orbitron', sans-serif; }
+        
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .btn-green { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #000; font-weight: 700; transition: 0.2s; }
+        .btn-green:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        .page { display: none; opacity: 0; }
+        .page-active { display: flex; animation: fadeIn 0.3s forwards; flex-direction: column; align-items: center; }
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        .syllabus-content { line-height: 1.7; color: #ccc; white-space: pre-wrap; font-size: 0.95rem; }
+        .sub-head { color: var(--primary); font-size: 1.4rem; font-weight: 800; margin-top: 1.2rem; border-bottom: 1px solid #222; padding-bottom: 4px; }
+    </style>
+</head>
+<body>
+
+    <section id="landing" class="page page-active min-h-screen pt-10 px-4 text-center">
+        <h1 class="cyber-font text-6xl md:text-8xl tracking-tighter mb-2">ZYRO <span class="text-green-500">STUDIES</span></h1>
+        <p class="text-gray-500 text-lg mb-8 uppercase tracking-widest">Premium NCERT Solutions</p>
+        <button onclick="nav('dashboard')" class="btn-green px-12 py-4 rounded-full uppercase text-sm tracking-widest">Get Started</button>
+    </section>
+
+    <section id="dashboard" class="page min-h-screen pt-4 px-4">
+        <div class="w-full max-w-5xl mx-auto">
+            <nav class="flex justify-between items-center mb-4 glass p-3 rounded-xl">
+                <button onclick="nav('landing')" class="text-xs text-gray-400 hover:text-white">← BACK</button>
+                <h2 class="cyber-font text-sm text-green-500">DASHBOARD</h2>
+                <span class="text-[9px] text-gray-600">OWNER: ANSHU PATEL</span>
+            </nav>
+
+            <div class="grid md:grid-cols-3 gap-3">
+                <div class="glass p-5 rounded-xl h-fit">
+                    <h3 class="font-bold text-lg mb-2 text-green-400">Class 9 Portal</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Expertly crafted solutions for CBSE/NCERT curriculum 2026.</p>
+                </div>
+                <div class="md:col-span-2 glass p-10 rounded-xl flex flex-col items-center justify-start text-center">
+                    <h3 class="text-3xl font-bold mb-6">View Full Curriculum</h3>
+                    <button onclick="nav('syllabus')" class="btn-green px-10 py-4 rounded-lg w-full md:w-auto">OPEN SYLLABUS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="syllabus" class="page min-h-screen pt-4 px-4">
+        <div class="w-full max-w-4xl mx-auto">
+            <div class="flex justify-between items-center mb-3 glass p-3 rounded-xl">
+                <button onclick="nav('dashboard')" class="text-xs text-gray-400 hover:text-white">← BACK</button>
+                <span class="text-green-500 font-bold text-xs uppercase tracking-widest">Class 9 Syllabus</span>
+            </div>
+
+            <div class="glass p-6 md:p-10 rounded-xl mb-10">
+                <div class="syllabus-content">
+                    <div class="sub-head" style="margin-top:0;">NCERT Solutions for class 9</div>
+                    The subjects especially Maths and Science for Class 9 are vast and quite tough to cope up to. To tackle the situation, NCERT Solutions are precisely prepared by the doctorate level competent faculties at ALLEN for all subjects as per the details provided in the NCERT books. Class 9 all build a strong base by emphasizing on the basics which are essential for the examinations in the likes of Olympiads and JEE.
+
+                    <div class="sub-head">📘 NCERT Solutions for Class 9 Maths</div>
+                    Chapter 1 – Number Systems
+                    Chapter 2 – Polynomials
+                    Chapter 3 – Coordinate Geometry
+                    Chapter 4 – Linear Equations in Two Variables
+                    Chapter 5 – Introduction to Euclid’s Geometry
+                    Chapter 6 – Lines and Angles
+                    Chapter 7 – Triangles
+                    Chapter 8 – Quadrilaterals
+                    Chapter 9 – Areas of Parallelograms and Triangles
+                    Chapter 10 – Circles
+                    Chapter 11 – Constructions
+                    Chapter 12 – Heron’s Formula
+                    Chapter 13 – Surface Areas and Volumes
+                    Chapter 14 – Statistics
+                    Chapter 15 – Probability
+
+                    <div class="sub-head">🔬 NCERT Solutions for Class 9 Science</div>
+                    Chapter 1 – Matter in Our Surroundings
+                    Chapter 2 – Is Matter Around Us Pure
+                    Chapter 3 – Atoms and Molecules
+                    Chapter 4 – Structure of the Atom
+                    Chapter 5 – The Fundamental Unit of Life
+                    Chapter 6 – Tissues
+                    Chapter 7 – Diversity in Living Organisms
+                    Chapter 8 – Motion
+                    Chapter 9 – Force and Laws of Motion
+                    Chapter 10 – Gravitation
+                    Chapter 11 – Work and Energy
+                    Chapter 12 – Sound
+                    Chapter 13 – Why Do We Fall Ill
+                    Chapter 14 – Natural Resources
+                    Chapter 15 – Improvement in Food Resources
+
+                    <div class="sub-head">🏛️ NCERT Solutions for Class 9 Social Science</div>
+                    <strong>History:</strong> The French Revolution, Socialism in Europe, Nazism, Forest Society, Pastoralists.
+                    <strong>Geography:</strong> India Size/Location, Physical Features, Drainage, Climate, Vegetation, Population.
+                    <strong>Civics:</strong> What is Democracy, Constitutional Design, Electoral Politics, Working of Institutions.
+                    <strong>Economics:</strong> Story of Palampur, People as Resource, Poverty, Food Security.
+
+                    <div class="sub-head">📗 NCERT Solutions for Class 9 English</div>
+                    <strong>Beehive:</strong> The Fun They Had, Sound of Music, Little Girl, Truly Beautiful Mind, Snake and Mirror, My Childhood, Packing, Reach for Top, Bond of Love, Kathmandu, If I Were You.
+                    <strong>Moments:</strong> Lost Child, Adventures of Toto, Iswaran, Kingdom of Fools, Happy Prince, Last Leaf, Beggar.
+
+                    <div class="sub-head">Benefits of Class 9 NCERT Solutions</div>
+                    1. Prepared by doctorate level faculties.
+                    2. Best for JEE/NEET foundation.
+                    3. Aligned with latest CBSE guidelines.
+                </div>
+            </div>
+
+            <footer class="pb-8 text-center border-t border-gray-900 pt-6">
+                <p class="text-[10px] text-gray-600 uppercase">Owner: Anshu Patel | © 2026 Zyro Studies</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        function nav(id) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('page-active'));
+            const target = document.getElementById(id);
+            target.classList.add('page-active');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
